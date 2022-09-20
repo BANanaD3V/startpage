@@ -39,12 +39,12 @@ function setGreeting(greetingName) {
 	let hour = new Date().getHours();
 
 	if (hour >= 23 || hour < 6) {
-		greeting.innerHTML = `${night}, ${greetingName}`;
+		greeting.innerHTML = `${night}`;
 	} else if (hour >= 6 && hour < 12) {
-		greeting.innerHTML = `${morning}, ${greetingName}`;
+		greeting.innerHTML = `${morning}`;
 	} else if (hour >= 12 && hour < 17) {
-		greeting.innerHTML = `${afternoon}, ${greetingName}`;
+		greeting.innerHTML = `${afternoon}`;
 	} else {
-		greeting.innerHTML = `${evening}, ${greetingName}`;
+		greeting.innerHTML = `${evening}`;
 	}
 }
